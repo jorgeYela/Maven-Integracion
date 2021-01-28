@@ -8,8 +8,10 @@
                 xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
-
+                
+	<f:event type="preRenderView" listener="#{loginBean.checkLogin('index')}" /> 
     <ui:define name="content">
+    
         <c:if test="#{!loginBean.userLogin().cambioPassword}">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <strong>Su contraseña es insegura</strong> Cambie su contraseña por defecto. visite

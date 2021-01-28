@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16096156182520" configfile="/Practica_3_EJB_JSF_JPA/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="562" id="pf16096157410084" referenceLink="//@navigationRule.1/@fromViewId|" inlinks="pf16096157410086 pf16097834690884" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/index.xhtml" x="338" y="2866" id="pf16096157410098" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" inlinks="pf16096157410099 pf16097834690885" path="/admin/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/*" x="122" y="4018" id="pf160961574100923" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf16096157410086 pf16096157410099 pf160961574100924 pf160961574100925 pf160961574100926 pf160961574100927 pf160961574100928" path="/admin/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/producto.xhtml" x="338" y="3634" id="pf160961574100929" referenceLink="//@navigationRule.2/@navigationCase.2/@toViewId|" inlinks="pf160961574100924" path="/admin/producto.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/bodega.xhtml" x="338" y="4018" id="pf160961574100930" referenceLink="//@navigationRule.2/@navigationCase.3/@toViewId|" inlinks="pf160961574100925" path="/admin/bodega.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/categoria.xhtml" x="338" y="4402" id="pf160961574100931" referenceLink="//@navigationRule.2/@navigationCase.4/@toViewId|" inlinks="pf160961574100926" path="/admin/categoria.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/empleados.xhtml" x="338" y="4786" id="pf160961574101032" referenceLink="//@navigationRule.2/@navigationCase.5/@toViewId|" inlinks="pf160961574100927" path="/admin/empleados.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/micuenta.xhtml" x="338" y="5170" id="pf160961574101033" referenceLink="//@navigationRule.2/@navigationCase.6/@toViewId|" inlinks="pf160961574100928" path="/admin/micuenta.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="i/*" id="pf16097834690886" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16097834690884 pf16097834690887 pf16097834690885" path="/inicio/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/login.xhtml" id="pf16097834690888" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16097834690887" path="/public/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/index.xhtml" id="pf161033884267920" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf161033891562726 pf161033891562727 pf161033891562728 pf161033891562729 pf161033891562730 pf161033891562731 pf161033891562732" inlinks="pf161033891562727" path="/empleado/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf161033891562733" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf161033891562726" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/cliente.xhtml" id="pf161033891562734" referenceLink="//@navigationRule.1/@navigationCase.2/@toViewId|" inlinks="pf161033891562728" path="/empleado/cliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/facturas.xhtml" id="pf161033891562735" referenceLink="//@navigationRule.1/@navigationCase.3/@toViewId|" inlinks="pf161033891562729" path="/empleado/facturas.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/nuevaFactura.xhtml" id="pf161033891562736" referenceLink="//@navigationRule.1/@navigationCase.4/@toViewId|" inlinks="pf161033891562730" path="/empleado/nuevaFactura.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/pedidos.xhtml" id="pf161033891562737" referenceLink="//@navigationRule.1/@navigationCase.5/@toViewId|" inlinks="pf161033891562731" path="/empleado/pedidos.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="empleado/micuenta.xhtml" id="pf161033891562738" referenceLink="//@navigationRule.1/@navigationCase.6/@toViewId|" inlinks="pf161033891562732" path="/empleado/micuenta.xhtml"/>
+  <links id="pf16096157410086" target="pf16096157410084" source="pf160961574100923" outcome="home"/>
+  <links id="pf16096157410099" target="pf16096157410098" source="pf160961574100923" outcome="admin"/>
+  <links id="pf160961574100924" target="pf160961574100929" source="pf160961574100923" outcome="producto"/>
+  <links id="pf160961574100925" target="pf160961574100930" source="pf160961574100923" outcome="bodega"/>
+  <links id="pf160961574100926" target="pf160961574100931" source="pf160961574100923" outcome="categoria"/>
+  <links id="pf160961574100927" target="pf160961574101032" source="pf160961574100923" outcome="empleados"/>
+  <links id="pf160961574100928" target="pf160961574101033" source="pf160961574100923" outcome="micuenta"/>
+  <links id="pf16097834690884" target="pf16096157410084" source="pf16097834690886" outcome="inicio"/>
+  <links id="pf16097834690887" target="pf16097834690888" source="pf16097834690886" outcome="login"/>
+  <links id="pf16097834690885" target="pf16096157410098" source="pf16097834690886" outcome="admin"/>
+  <links id="pf161033891562726" target="pf161033891562733" source="pf161033884267920" outcome="home"/>
+  <links id="pf161033891562727" target="pf161033884267920" source="pf161033884267920" outcome="empleado"/>
+  <links id="pf161033891562728" target="pf161033891562734" source="pf161033884267920" outcome="cliente"/>
+  <links id="pf161033891562729" target="pf161033891562735" source="pf161033884267920" outcome="facturas"/>
+  <links id="pf161033891562730" target="pf161033891562736" source="pf161033884267920" outcome="nuevaFactura"/>
+  <links id="pf161033891562731" target="pf161033891562737" source="pf161033884267920" outcome="pedidos"/>
+  <links id="pf161033891562732" target="pf161033891562738" source="pf161033884267920" outcome="micuenta"/>
+</pageflow:Pageflow>
